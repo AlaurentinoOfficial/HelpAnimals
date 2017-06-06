@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 using Newtonsoft.Json;
 using Plugin.Connectivity;
+using System.Net;
+using System.Collections.Specialized;
 
 namespace HelpAnimals
 {
@@ -14,6 +16,19 @@ namespace HelpAnimals
     {
         HttpClient client;
         IEnumerable<Item> items;
+
+        public string Login(string email, string senha)
+        {
+            using (var client = new WebClient())
+            {
+                var values = new NameValueCollection();
+                values["email"] = email;
+                values["senha"] = senha;
+
+                var response = client.UploadValues("http://helpaninmals-api.azurewebsites.net/login", values);
+                return Encoding.Default.GetString(response);
+            }
+        }
 
         public CloudDataStore()
         {

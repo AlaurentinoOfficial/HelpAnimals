@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -48,5 +48,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NewItemPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)ViewModels\ClassDiagram1.cd" />
+    <None Include="$(MSBuildThisFileDirectory)ViewModels\HelpAnimals.cd" />
   </ItemGroup>
 </Project>

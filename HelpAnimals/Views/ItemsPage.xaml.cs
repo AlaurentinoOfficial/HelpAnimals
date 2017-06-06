@@ -9,10 +9,11 @@ namespace HelpAnimals
     public partial class ItemsPage : ContentPage
     {
         ItemsViewModel viewModel;
-
+        
         public ItemsPage()
         {
             InitializeComponent();
+            
 
             BindingContext = viewModel = new ItemsViewModel();
         }

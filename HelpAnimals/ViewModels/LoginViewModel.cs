@@ -5,13 +5,12 @@ using Xamarin.Forms;
 
 namespace HelpAnimals
 {
+
+
     public class LoginViewModel : BaseViewModel
     {
-        public LoginViewModel()
-        {
-            SignInCommand = new Command(async () => await SignIn());
-            NotNowCommand = new Command(App.GoToMainPage);
-        }
+        string email;
+        string senha;
 
         string message = string.Empty;
         public string Message
@@ -19,33 +18,12 @@ namespace HelpAnimals
             get { return message; }
             set { message = value; OnPropertyChanged(); }
         }
+       
 
-        public ICommand NotNowCommand { get; }
-        public ICommand SignInCommand { get; }
-
-        async Task SignIn()
+        public void TryLoginAsync()
         {
-            try
-            {
-                IsBusy = true;
-                Message = "Signing In...";
-
-                // Log the user in
-                await TryLoginAsync();
-            }
-            finally
-            {
-                Message = string.Empty;
-                IsBusy = false;
-
-                if (Settings.IsLoggedIn)
-                    App.GoToMainPage();
-            }
-        }
-
-        public static async Task<bool> TryLoginAsync()
-        {
-            return true;
+            CloudDataStore cloud = new CloudDataStore();
+            cloud.Login(email, senha);
         }
     }
 }
