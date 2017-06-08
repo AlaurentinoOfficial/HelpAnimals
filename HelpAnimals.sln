@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpAnimals.iOS", "iOS\Help
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpAnimals.Droid", "Droid\HelpAnimals.Droid.csproj", "{351C2D19-BFB1-4522-8DFF-AB4E067E55BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagrama de Classe", "Diagrama de Classe\Diagrama de Classe.csproj", "{6DD94A70-35F4-4C03-B01A-9EB34CA30833}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		HelpAnimals\HelpAnimals.projitems*{01b72fac-fbd7-46eb-9201-c4c7b19df89b}*SharedItemsImports = 13
@@ -47,6 +49,18 @@ Global
 		{351C2D19-BFB1-4522-8DFF-AB4E067E55BA}.Release|iPhone.Build.0 = Release|Any CPU
 		{351C2D19-BFB1-4522-8DFF-AB4E067E55BA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{351C2D19-BFB1-4522-8DFF-AB4E067E55BA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Release|iPhone.Build.0 = Release|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6DD94A70-35F4-4C03-B01A-9EB34CA30833}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

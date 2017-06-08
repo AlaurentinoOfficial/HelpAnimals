@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Diagrama_de_Classes
+namespace Diagrama_de_Classe
 {
     class Program
     {

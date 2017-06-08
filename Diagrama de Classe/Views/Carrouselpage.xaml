@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Carrouselpage">
+  <CarouselPage.Children>
+    
+    <ContentPage BackgroundColor="Red">
+      <ContentPage.Content>
+        <StackLayout Padding="130">
+           <Label Text="Seja Bem vindo ao HelpAnimals"  TextColor="White" FontSize="23" HorizontalTextAlignment="Center"></Label>
+           <Button Text="Entrar"  TextColor="White" FontSize="13" BackgroundColor="Green" Clicked="OnClicked"  ></Button> 
+           <Button Text="Cadastrar"   TextColor="White" FontSize="13" BackgroundColor="Green"></Button>  
+        </StackLayout>     
+      </ContentPage.Content>
+    </ContentPage>
+    
+    <ContentPage BackgroundColor="Blue">
+      <ContentPage.Content>
+        <StackLayout Padding="130">
+           <Label Text="Nos Amamos Animais..."  TextColor="White"  FontSize="23" HorizontalTextAlignment="Center"></Label>
+           <Button Text="Entrar"  TextColor="White" FontSize="13" BackgroundColor="Green" Clicked="OnClicked" ></Button> 
+           <Button Text="Cadastrar"   TextColor="White" FontSize="13" BackgroundColor="Green" ></Button>  
+        </StackLayout>   
+      </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Green">
+      <ContentPage.Content>
+     <StackLayout Padding="130">
+       <Label Text="E Sabemos que voce Também..." TextColor="White" FontSize="23" HorizontalTextAlignment="Center"></Label>
+       <Button Text="Entrar" TextColor="White" FontSize="13" BackgroundColor="Blue" Clicked="OnClicked" ></Button>
+       <Button Text="Cadastrar" TextColor="White" FontSize="13" BackgroundColor="Blue"></Button>     
+     </StackLayout>
+      </ContentPage.Content>
+    </ContentPage>
+  </CarouselPage.Children>
+</CarouselPage>

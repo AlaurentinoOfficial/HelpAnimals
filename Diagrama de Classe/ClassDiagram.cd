@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="pj1_2bimestre.Models.Animal">
+    <Position X="8.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAQ=</HashCode>
+      <FileName>Models\Animal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HelpAnimals.Item">
+    <Position X="10" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQEAAgAAAAIAAAAAAAAAAAAAAIAAAACAAAAgA=</HashCode>
+      <FileName>Models\Item.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ItemDetailViewModel" />
+      <Property Name="ItemsViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="pj1_2bimestre.Models.Usuario">
+    <Position X="6.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAAAAgAAQCAAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CloudDataStore" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="pj1_2bimestre.Models.Veterinario">
+    <Position X="12" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAABAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Veterinario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Item" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HelpAnimals.LoginViewModel">
+    <Position X="5.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAIAAAACA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAnimals.ItemsViewModel">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAABAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ItemsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAnimals.ItemDetailViewModel">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>ViewModels\ItemDetailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAnimals.BaseViewModel">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAAAEAAAQBQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IDataStore" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HelpAnimals.AboutViewModel">
+    <Position X="13" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAnimals.CloudDataStore">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAgAABAAAABAAAAAAEAQBAAQAAA=</HashCode>
+      <FileName>Services\CloudDataStore.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HelpAnimals.MockDataStore">
+    <Position X="16.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAgAABAAAABAAAAEAEAAAAAQAAA=</HashCode>
+      <FileName>Services\MockDataStore.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HelpAnimals.ObservableObject">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\ObservableObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HelpAnimals.Settings">
+    <Position X="2" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAEAAAAAAAAggCAkAAAAAAAAAAAACAAAAQAA=</HashCode>
+      <FileName>Helpers\Settings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CloudDataStore" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="HelpAnimals.IDataStore&lt;T&gt;">
+    <Position X="16.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAABAAAABAAAAAAEAAAAAQAAA=</HashCode>
+      <FileName>Services\IDataStore.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MockDataStore" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
