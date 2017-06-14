@@ -29,7 +29,18 @@ namespace HelpAnimals
                 return Encoding.Default.GetString(response);
             }
         }
-
+        public string Cadastro(string name,string email, string senha)
+        {
+            using (var client = new WebClient())
+            {
+                var values = new NameValueCollection();
+                values["email"] = email;
+                values["senha"] = senha;
+                values["name"] = name;
+                var response = client.UploadValues("http://helpaninmals-api.azurewebsites.net/register", values);
+                return Encoding.Default.GetString(response);
+            }
+        }
         public CloudDataStore()
         {
             client = new HttpClient();

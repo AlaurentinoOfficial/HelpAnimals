@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:HelpAnimals.Views;" x:Class="HelpAnimals.LoginPage" Title="AppName">
-	<ContentPage.BindingContext>
-		<vm:LoginViewModel />
-	</ContentPage.BindingContext>
-	<ScrollView>
-    <StackLayout>
-      <Label x:Name="Loginlabel" Text="Email:"></Label>
-      <Entry Biding="{email}"></Entry>
-      <Label x:Name="Senhalabel" Text="Senha:"></Label>
-      <Entry isPassword="true" Biding="{senha}"></Entry>
-      <Button x:Name="Botao" command="{TryLoginAsync()}" />
+  <StackLayout Orientation="Vertical" Padding="60" BackgroundColor="White">
+    <Image Source="Assets/logo.png"/>
+    <Entry x:Name="loginEntry" Placeholder="E-mail ou usuário" Keyboard="Default"  Text="{Binding EntryLogin}"/>
+    <Entry x:Name="senhaEntry" Placeholder="Senha" IsPassword="True" Keyboard="Email" Text="{Binding EntryPassword}"/>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Ainda não tem conta? "/>
+      <Label x:Name="cadastroLabel" Text="Criar nova conta." TextColor="Blue"/>
     </StackLayout>
-	</ScrollView>
+
+    <Button x:Name="loginButton" Text="Login"  BorderColor="#3BCCC9" Command="{Binding LoginCommand}"/>
+  </StackLayout>
 </ContentPage>
